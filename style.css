@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1,6;
+
+}
+a {
+    text-decoration: none;
+}
+
+.et-hero-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    text-align:center;
+    padding: 100px;
+    background-image: url('fonas.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #db9f9f;
+    z-index: 30;
+}
+
+.et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 8px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.et-hero-tab:hover {
+    color: rgb(244, 180, 111);
+    background: rgba(102, 177, 241, 0.8);
+    transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 60px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+    .et-hero-tabs h1,
+    .et-slide h1 {
+        font-size: 90px;
+    }
+
+    .et-hero-tabs h2,
+    .et-slide h2 {
+        font-size: 20px;
+        animation: 8s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+    }
+    .et-hero-tab {
+        font-size: 30px;
+    }
+}
+.et-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+    width: 100%;
+    height:fit-content;
+    margin: 0 auto;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #d8eae7;
+  }
+  100% {
+    background-color: #dfcce0;
+  }
+}
+
+.et-slide {
+    width: 100%;
+    max-width: 800px; /* Maksimalus plotis, jei norite, kad sekcijos nebūtų per plačios */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Teksto centravimas */
+}
+.text{
+    background-color: none;
+  text-align: center;
+  text-decoration:none;
+  letter-spacing; 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 20px #000;
+    background-color: #e5e8b9;
+}
+
+th, td {
+    border: 1px solid #edaf2b;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #e3e788;
+    font-weight: bold;
+}
+.about{
+    background-image: url('fonas2.jpg');
+    background-size:cover; 
+    background-repeat:repeat;
+    background-position-y:center;
+    padding: 50px;
+}
+.price{
+    background-image: url('fonas5.jpg');
+    background-size:cover; 
+    background-repeat:repeat;
+    background-position-y:center;
+    padding: 50px;
+}
+.friends{
+    background-image: url('fonas4.jpg');
+    background-size:cover; 
+    background-repeat:repeat;
+    background-position-y:center;
+    padding: 50px;
+}
+.contact{
+    background-image: url('fonas3.jpg');
+    background-size:cover; 
+    background-repeat:repeat;
+    background-position-y:center;
+    padding: 50px;
+}
+.contact-button {
+    border: 2px solid rgb(10, 226, 10) ;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color:rgb(95, 175, 95);
+    color: #fff;
+  }
+  h1 {
+    font-size: 2.5em; /* Pagrindinės antraštės dydis */
+    margin-bottom: 20px; /* Tarpas po antrašte */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+p, .et-slide p {
+    font-size: 1em;
+    margin-bottom: 10px; /* Tarpas po pastraipos */
+}
