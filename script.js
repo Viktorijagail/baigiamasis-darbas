@@ -22,4 +22,4 @@ setSliderCss() {
     let left = 0;
     if (this.currentTab) {
         width = this.currentTab.css('width');
-        
+
